@@ -31,4 +31,4 @@ async def steam(ctx):
     f = open("C:/github/steamtop10/Steam.txt", "r", encoding="utf-8")
     await ctx.send(f'{f.read()}')
 
-bot.run('//but token')
+bot.run('//bot token')
