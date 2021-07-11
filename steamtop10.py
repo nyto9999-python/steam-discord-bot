@@ -86,19 +86,17 @@ def get_text(url):
     r.raise_for_status()
     r.encoding = r.apparent_encoding
     return r.text
-
+# re.findall return a list of tuples
 def listToString(list):
-
-    # initialize an empty string
     str1 = ""
 
-    # traverse in the string
+    # tuple in the list
     for ele in list:
+        # tuple convert to string
         str1 = ''.join(ele)
-
-    # return string
     return str1
 
+# save data to local
 def save_data(game_info):
     save_path = "C:/github/steamtop10/Steam.txt"
     df = pd.DataFrame(game_info, columns=['Steam遊戲排行','遊戲評價','價格'])
@@ -106,7 +104,6 @@ def save_data(game_info):
     print("文件保存成功！")
 
 def run(game_info,review, price, text):
-
     soup = BeautifulSoup(text, "html.parser")
 
     # 遊戲評價
@@ -129,7 +126,8 @@ def run(game_info,review, price, text):
     name_text = soup.find_all('div', class_="responsive_search_name_combined")[:10]
     for z in name_text:
         name = str(num) + ". " + z.find(class_="title").string.strip() + "  "
-        # game.append([name,review[num-1]])
+
+        # 判斷是否特價
         if z.find(class_="col search_discount responsive_secondrow").string is None:
             price = z.find(class_="col search_price discounted responsive_secondrow").text.strip().split("NT$")
 
@@ -144,6 +142,6 @@ def run(game_info,review, price, text):
 if __name__ == "__main__":
     game_info = [] # 遊戲全部訊息
     review = [] #遊戲評價
-    price = []
-    run(game_info,review, price, get_text("https://store.steampowered.com/search/?filter=globaltopsellers&page=1&os=win"))
+    price = [] #遊戲價格
+    run(game_info,review, price, get_text("discord bot token"))
     save_data(game_info)
