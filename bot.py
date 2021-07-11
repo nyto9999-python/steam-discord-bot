@@ -59,7 +59,7 @@ async def steam(ctx):
 
 
 <<<<<<< HEAD
-bot.run('ODYzNTk3MTQ3Mzc1MDA5ODQy.YOpNhA.rNLrjPjzFVSZey3TnYDWw6zAT6Y')
+bot.run('discord token')
 =======
 bot.run('//bot token')
 >>>>>>> 89097300e47474333dbc042f37444bf09bfd026f
