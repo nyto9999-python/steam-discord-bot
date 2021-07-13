@@ -104,7 +104,4 @@ async def on_message(message):
         await bot.process_commands(message)
 
 
-
-
-# token
-bot.run("token")
+bot.run('//bot token')
