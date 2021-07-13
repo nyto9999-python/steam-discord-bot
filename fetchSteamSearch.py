@@ -42,12 +42,19 @@ def run(Search_info, Price, Discount, Image, text):
     else:
     #沒打折
         price_text = soup.find('div',class_="col search_price responsive_secondrow").text.strip().split("NT$")
-        if price_text[0] != "免費遊玩":
+
+        try:
+            if price_text[0] != "免費遊玩":
+                Discount.append("無")
+                Price.append(price_text[1])
+
+            else:
+                Discount.append("免費遊玩")
+                Price.append(price_text[0])
+        except:
             Discount.append("無")
-            Price.append(price_text[1])
-        else:
-            Discount.append("原價")
-            Price.append(price_text[0])
+            Price.append("沒有標示價錢")
+
 
     # 遊戲名稱
     search_name_ellipsis_text = soup.find('div', class_="col search_name ellipsis")

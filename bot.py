@@ -92,7 +92,7 @@ async def on_message(message):
             url = "https://store.steampowered.com/search/?term="+message.content[2:].replace(" ",'%20')
             embedVar = discord.Embed(title=row[0], url= url, color=0xc27c0e)
             embedVar.set_thumbnail(url=data[-1][3])
-            embedVar.add_field(name="\u200B", value= ':moneybag:'+data[-1][1 ]+ '    折扣::small_red_triangle_down:'+ data[-1][2], inline=False)
+            embedVar.add_field(name="\u200B", value= ':moneybag::    '+data[-1][1 ]+ '    折扣::small_red_triangle_down:'+ data[-1][2], inline=False)
             end = time.process_time()
             embedVar.set_footer(text="執行時間：%.2f 秒" % (end - start))
             await message.channel.send( embed=embedVar)
@@ -104,4 +104,4 @@ async def on_message(message):
         await bot.process_commands(message)
 
 
-bot.run('//bot token')
+bot.run('token')

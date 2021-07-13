@@ -1,2 +1,10 @@
 遊戲名稱,特價,價錢,圖片
-FINAL FANTASY® XIII-2, 540,無,https://cdn.akamai.steamstatic.com/steam/apps/292140/capsule_sm_120.jpg?t=1615558503
+火影忍者 疾風傳 終極風暴4, 790,無,https://cdn.akamai.steamstatic.com/steam/apps/349040/capsule_sm_120_tchinese.jpg?t=1611701005
+Grand Theft Auto V,沒有標示價錢,無,https://cdn.akamai.steamstatic.com/steam/apps/271590/capsule_sm_120.jpg?t=1618856444
+槍火重生, 226,無,https://cdn.akamai.steamstatic.com/steam/apps/1217060/capsule_sm_120_tchinese.jpg?t=1625658270
+裁決者 -The White Butcher-,沒有標示價錢,無,https://cdn.akamai.steamstatic.com/steam/apps/758270/capsule_sm_120.jpg?t=1574163138
+《The Sims™ 4》模擬市民夜生活同捆包：《同歡共樂》、《外出用餐》、《電影同樂組合》和《保齡球之夜組合》," 2,036",無,https://cdn.akamai.steamstatic.com/steam/bundles/18881/chu2udqjkvpa8fld/capsule_sm_120_tchinese.jpg?t=1612461678
+Out of the Park Baseball 22,原價:  568 特價: 284,-50%,https://cdn.akamai.steamstatic.com/steam/apps/1455660/capsule_sm_120.jpg?t=1624588329
+FINAL FANTASY XIV Online Free Trial,沒有標示價錢,無,https://cdn.akamai.steamstatic.com/steam/apps/312060/capsule_sm_120.jpg?t=1613166600
+八方旅人," 1,950",無,https://cdn.akamai.steamstatic.com/steam/apps/921570/capsule_sm_120.jpg?t=1615475204
+汉末求生  Survival in Three kingdoms, 186,無,https://cdn.akamai.steamstatic.com/steam/apps/1006800/capsule_sm_120_tchinese.jpg?t=1556712625
