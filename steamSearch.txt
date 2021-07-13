@@ -1,0 +1,2 @@
+遊戲名稱,特價,價錢,圖片
+FINAL FANTASY® XIII-2, 540,無,https://cdn.akamai.steamstatic.com/steam/apps/292140/capsule_sm_120.jpg?t=1615558503
