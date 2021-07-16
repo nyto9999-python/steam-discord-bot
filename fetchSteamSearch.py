@@ -17,7 +17,12 @@ def get_text(url):
     r.encoding = r.apparent_encoding
     return r.text
 
-def run(Search_info, Price, Discount, Image, text):
+def run(url):
+    Search_info = [] # 搜尋到的遊戲列表
+    Price = [] #價錢
+    Image = [] #圖片
+    Discount = [] #特價
+    text = get_text(url)
     soup = BeautifulSoup(text, "html.parser")
 
     # 遊戲圖片
@@ -43,6 +48,7 @@ def run(Search_info, Price, Discount, Image, text):
     #沒打折
         price_text = soup.find('div',class_="col search_price responsive_secondrow").text.strip().split("NT$")
 
+
         try:
             if price_text[0] != "免費遊玩":
                 Discount.append("無")
@@ -61,10 +67,11 @@ def run(Search_info, Price, Discount, Image, text):
     gameTitle = search_name_ellipsis_text.find('span', class_="title").string.strip()
 
     Search_info.append([gameTitle, Price[-1], Discount[-1], Image[-1]])
+    save_data(Search_info)
     return True
 
 def save_data(search_info):
-    save_path = "C:/github/steamtop10/steamSearch.txt"
+    save_path = "steamSearch.txt"
     df = pd.DataFrame(search_info, columns=['遊戲名稱','特價','價錢','圖片'])
     df.to_csv(save_path, index=0)
     print("文件保存成功！")

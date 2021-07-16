@@ -1,3 +1,11 @@
+import os
+
+
+
+for Filename in os.listdir('steamtop10\cmds'):
+    print(Filename)
+
+
 # @bot.event
 # async def on_member_join(member):
 #     channel = bot.get_channel(861601242508951562)
@@ -30,7 +38,11 @@
 #                 await ctx.send(embed=embedVar)
 #         for i in temp:
 
-
+    # if message.author.id == 697221038076985355 and message.author != self.bot.user:
+    #     for i in emoji:
+    #         await message.add_reaction(i)
+    #     await self.bot.process_commands(message)#warning
+    # search steam game
 
 
 # from typing import Any

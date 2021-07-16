@@ -1,11 +1,9 @@
-from typing import Any
+
 import requests
 import pandas as pd
-import re
 from bs4 import BeautifulSoup
-import functools
-import operator
-num = 0
+
+
 
 def get_text(url):
     try:
@@ -19,13 +17,17 @@ def get_text(url):
 
 #done
 def save_data(chart_info):
-    save_path = "C:/github/steamtop10/steamPlayer.txt"
+    save_path = "steamPlayer.txt"
     df = pd.DataFrame(chart_info, columns=['遊戲名稱','當前人數','高峰人數'])
     df.to_csv(save_path, index=0)
     print("文件保存成功！")
 
 
-def run(chart_info, currentPlayers, peakPlayers, text):
+def run():
+    chart_info = [] # top game by current players全部訊息
+    currentPlayers = [] #當前玩家
+    peakPlayers = [] #人數最高峰
+    text = get_text("https://steamcharts.com/top")
     soup = BeautifulSoup(text, "html.parser")
 
     # 當前人數
@@ -40,7 +42,7 @@ def run(chart_info, currentPlayers, peakPlayers, text):
     for p in peak_players_text:
         peakPlayers.append(p.string.strip())
 
-    global num
+    num = 0
     # 遊戲名稱
     game_title = soup.find_all('td', class_="game-name left")[:10]
     for t in game_title:
@@ -48,17 +50,11 @@ def run(chart_info, currentPlayers, peakPlayers, text):
         chart_info.append([name, currentPlayers[num], peakPlayers[num]])
         # game_info.append([ name, review[num-1], str(price[1]), str(hyperlink[num-1])])
         num = num + 1
-
+    num = 0
+    save_data(chart_info)
 
 
 
 # def save_data(chart_info):
 
 
-
-if __name__ == "__main__":
-    Chart_info = [] # top game by current players全部訊息
-    CurrentPlayers = [] #當前玩家
-    PeakPlayers = [] #人數最高峰
-    run(Chart_info,CurrentPlayers, PeakPlayers, get_text("https://steamcharts.com/top"))
-    save_data(Chart_info)

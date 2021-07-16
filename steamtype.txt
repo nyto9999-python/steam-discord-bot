@@ -1,0 +1,16 @@
+Steam遊戲類別,圖片,價格,鏈接
+1. Counter-Strike: Global Offensive,https://cdn.cloudflare.steamstatic.com/steam/apps/730/capsule_184x69.jpg?t=1623182945,免費遊玩,https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/?snr=1_241_4_action_104
+2. 《Apex 英雄》,https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/capsule_184x69.jpg?t=1625753787,免費遊玩,https://store.steampowered.com/app/1172470/Apex/?snr=1_241_4_action_104
+3. Grand Theft Auto V,https://cdn.cloudflare.steamstatic.com/steam/apps/271590/capsule_184x69.jpg?t=1618856444,無,https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/?snr=1_241_4_action_104
+4. Red Dead Redemption 2,https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/capsule_184x69.jpg?t=1618851907,"NT$ 1,199",https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/?snr=1_241_4_action_104
+5. Warframe,https://cdn.cloudflare.steamstatic.com/steam/apps/230410/capsule_184x69.jpg?t=1625588632,免費遊玩,https://store.steampowered.com/app/230410/Warframe/?snr=1_241_4_action_104
+6. Phantasy Star Online 2 New Genesis,https://cdn.cloudflare.steamstatic.com/steam/apps/1056640/capsule_184x69.jpg?t=1624366520,免費遊玩,https://store.steampowered.com/app/1056640/Phantasy_Star_Online_2_New_Genesis/?snr=1_241_4_action_104
+7. PUBG: BATTLEGROUNDS,https://cdn.cloudflare.steamstatic.com/steam/apps/578080/capsule_184x69.jpg?t=1626232783,NT$ 799,https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/?snr=1_241_4_action_104
+8. Monster Hunter: World,https://cdn.cloudflare.steamstatic.com/steam/apps/582010/capsule_184x69.jpg?t=1623978557,NT$ 920,https://store.steampowered.com/app/582010/Monster_Hunter_World/?snr=1_241_4_action_104
+9. Conqueror's Blade,https://cdn.cloudflare.steamstatic.com/steam/apps/835570/capsule_184x69.jpg?t=1625809266,免費遊玩,https://store.steampowered.com/app/835570/Conquerors_Blade/?snr=1_241_4_action_104
+10. Dead by Daylight,https://cdn.cloudflare.steamstatic.com/steam/apps/381210/capsule_184x69.jpg?t=1625785823,NT$ 379,https://store.steampowered.com/app/381210/Dead_by_Daylight/?snr=1_241_4_action_104
+11. Monster Hunter World: Iceborne,https://cdn.cloudflare.steamstatic.com/steam/apps/1118010/capsule_184x69.jpg?t=1623978554,"NT$ 1,230",https://store.steampowered.com/app/1118010/Monster_Hunter_World_Iceborne/?snr=1_241_4_action_104
+12. Tom Clancy's Rainbow Six® Siege,https://cdn.cloudflare.steamstatic.com/steam/apps/359550/capsule_184x69.jpg?t=1623951529,NT$ 569,https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/?snr=1_241_4_action_104
+13. Sea of Thieves,https://cdn.cloudflare.steamstatic.com/steam/apps/1172620/capsule_184x69.jpg?t=1626105172,"NT$ 1,099",https://store.steampowered.com/app/1172620/Sea_of_Thieves/?snr=1_241_4_action_104
+14. 緋紅結繫,https://cdn.cloudflare.steamstatic.com/steam/apps/775500/capsule_184x69.jpg?t=1624639483,"NT$ 1,490",https://store.steampowered.com/app/775500/_/?snr=1_241_4_action_104
+15. 雙人成行,https://cdn.cloudflare.steamstatic.com/steam/apps/1426210/capsule_184x69.jpg?t=1625770916,"NT$ 1,199",https://store.steampowered.com/app/1426210/_/?snr=1_241_4_action_104

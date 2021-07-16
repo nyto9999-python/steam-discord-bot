@@ -7,9 +7,6 @@ x = [] # game title
 y1 = [] # current player
 y2= [] # peak player
 
-font = {'family' : 'normal',
-        'weight' : 'light',
-        'size'   : 3}
 
 with open('C:/github/steamtop10/steamPlayer.txt',"r",encoding="utf-8") as csvfile:
     plots = csv.reader(csvfile, delimiter = ',')

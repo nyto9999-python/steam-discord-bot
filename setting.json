@@ -1,0 +1,24 @@
+{
+    "TOKEN": "token",
+    "Guild_Channel": "535747427509075980",
+    "Chat_Channel" : "535747427509075988",
+
+
+    "Category" : {
+        "action" : "action",
+        "rogue": "action_rogue_like",
+        "tps": "action_tps",
+        "fps": "action_fps",
+        "多人": "multiplayer"
+    },
+
+    "Command" : {
+        "```!ping```" : "Discord延遲",
+        "```!top 1~25```" : "Steam熱門遊戲",
+        "```!player```" : "Steam玩家人數",
+        "```!game 遊戲名稱```" : "Steam遊戲查詢",
+        "```!type 遊戲類型 ex. action fps tps```" : "Steam遊戲查詢by類別",
+        "```!type```" : "可查詢的遊戲類型"
+    }
+
+}

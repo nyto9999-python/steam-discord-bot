@@ -3,9 +3,8 @@ import requests
 import pandas as pd
 import re
 from bs4 import BeautifulSoup
-import functools
-import operator
-num = 1
+
+
 
 def get_text(url):
     try:
@@ -28,16 +27,20 @@ def listToString(list):
 
 # save data to local
 def save_data(game_info):
-    save_path = "C:/github/steamtop10/steamtop10.txt"
+    save_path = "steamtop10.txt"
     df = pd.DataFrame(game_info, columns=['Steam遊戲排行','遊戲評價','價格','鏈接'])
     df.to_csv(save_path, index=0)
     print("文件保存成功！")
 
-def run(game_info,review,hyperlink, price, text):
+def run():
+    game_info = [] # 遊戲全部訊息
+    review = [] #遊戲評價
+    price = [] #遊戲價格
+    hyperlink = [] #遊戲鏈接
+    text = get_text("https://store.steampowered.com/search/?filter=globaltopsellers&page=1&os=win")
     soup = BeautifulSoup(text, "html.parser")
-
     # 遊戲評價
-    w = soup.find_all(class_ = "col search_reviewscore responsive_secondrow")[:10]
+    w = soup.find_all(class_ = "col search_reviewscore responsive_secondrow")
     for u in w:
         if u.span is not None:
             substring = u.span["data-tooltip-html"]
@@ -52,13 +55,13 @@ def run(game_info,review,hyperlink, price, text):
     # 遊戲頁面連接
     link_text = soup.find_all("div", id="search_resultsRows")
     for k in link_text:
-        b = k.find_all('a')[:10]
+        b = k.find_all('a')
     for j in b:
         hyperlink.append(j['href'])
 
-    global num
+    num = 1
     # 遊戲名稱
-    name_text = soup.find_all('div', class_="responsive_search_name_combined")[:10]
+    name_text = soup.find_all('div', class_="responsive_search_name_combined")
     for z in name_text:
         name = str(num) + ". " + z.find(class_="title").string.strip() + "  "
 
@@ -72,13 +75,6 @@ def run(game_info,review,hyperlink, price, text):
 
             game_info.append([ name, review[num-1], str(price[1]), str(hyperlink[num-1])])
         num = num + 1
-
-
-
-if __name__ == "__main__":
-    game_info = [] # 遊戲全部訊息
-    review = [] #遊戲評價
-    price = [] #遊戲價格
-    hyperlink = [] #遊戲鏈接
-    run(game_info,review, price, hyperlink, get_text("https://store.steampowered.com/search/?filter=globaltopsellers&page=1&os=win"))
+    num = 1
     save_data(game_info)
+
