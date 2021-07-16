@@ -53,10 +53,6 @@ for Filename in os.listdir('cmds'):
 
 
 
-            url = "https://store.steampowered.com/search/?term="+message.content[2:].replace(" ",'%20')
-            embedVar.set_thumbnail(url=data[-1][3])
-            embedVar.add_field(name="\u200B", value= ':moneybag::    '+data[-1][1 ]+ '    折扣::small_red_triangle_down:'+ data[-1][2], inline=False)
-            end = time.process_time()
 bot.run(discord_setting['TOKEN'])
 
 
