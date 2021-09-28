@@ -1,10 +1,12 @@
-# Discord bot command
 
-### Steam game chart 
+# Steam & Discord bot
+爬 steam 網頁練習 + Discord bot
+
+### chart 
 ![image](https://github.com/nyto9999/steamtop10/blob/main/readMesteam10.PNG)
 
-### Steam game player
-![image](https://github.com/nyto9999/steamtop10/blob/main/readmeImg2.PNG)
+### commands
+![image](https://github.com/nyto9999/steamtop10/blob/main/readMeCommand.PNG)
 
 ### Search game on Steam 
-![image](https://github.com/nyto9999/steamtop10/blob/main/botsearchgame.PNG)
+![image](https://github.com/nyto9999/steamtop10/blob/main/readMeSearch.PNG)
